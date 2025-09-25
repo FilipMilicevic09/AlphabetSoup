@@ -29,7 +29,7 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-
+        letters += word;
     }
 
 
