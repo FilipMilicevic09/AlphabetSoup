@@ -35,7 +35,8 @@ public class Soup {
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
-        return 'a';
+    String Rodwell = letters.charAt((int)(Math.random() * letters.length()-1));
+    return Rodwell;
     }
 
 
@@ -43,6 +44,7 @@ public class Soup {
     //the letters
     public String companyCentered(){
         return "";
+
     }
 
 
