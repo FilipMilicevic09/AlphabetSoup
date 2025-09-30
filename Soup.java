@@ -1,3 +1,6 @@
+//Name: Filip Milicevic
+//Date: 09/25/25
+
 public class Soup {
     //these are instance variables 
     private String letters;
@@ -44,14 +47,14 @@ public class Soup {
     //the letters
     public String companyCentered(){
        String a = letters.substring(0,(letters.length()-1)/2);
-       String b = 
-
+       String b = letters.substring((letters.length() + 1) / 2);
+        return a + company + b;
     }
 
 
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
-        
+    String vowels = "aeiouAEIOU"    
     }
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
