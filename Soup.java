@@ -1,5 +1,6 @@
 //Name: Filip Milicevic
-//Date: 09/25/25
+//Date: 09/29/25
+// This program will modify or change a string of letters for a company. This allows for the user to add letters to a company
 
 public class Soup {
     //these are instance variables 
@@ -60,11 +61,13 @@ public class Soup {
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
     public void removeSome(int num){
-
+     int start=(int)(Math.random()* (letters.length()-num+1));   
+    letters = letters.substring (0, start)+ letters.substring(start + num);
+    System.out.println (letters);
     }
 
     //should remove the word "word" from the string letters. If the word is not found in letters then it does nothing.
     public void removeWord(String word){
-        
+     letters=letters.replaceAll(word,"");  
     }
 }
