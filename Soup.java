@@ -46,15 +46,16 @@ public class Soup {
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
-       String a = letters.substring(0,(letters.length()-1)/2);
-       String b = letters.substring((letters.length() + 1) / 2);
+       String a = letters.substring(0,(letters.length())/2);
+       String b = letters.substring((letters.length()) / 2);
         return a + company + b;
     }
 
 
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
-    String vowels = "aeiouAEIOU"    
+
+     letters = letters.replaceFirst("[AEIOUaeiou]", "");  
     }
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
