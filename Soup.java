@@ -45,8 +45,8 @@ public class Soup {
     //Precondition: "letters" must contain at least one character.
     //Poscondition: Returns one random character from the letters string
     public char randomLetter(){
-    char Rodwell = letters.charAt((int)(Math.random() * letters.length()-1));
-    return Rodwell;
+    char rLetter = letters.charAt((int)(Math.random() * letters.length()));
+    return rLetter;
     }
 
 
@@ -76,7 +76,7 @@ public class Soup {
     //Precondition: 0 <= number <= letters.lenght
     //Poscondition removes num characters starting from a random inded in letters.
     public void removeSome(int num){
-     int start=(int)(Math.random()* (letters.length()-num+1));   
+     int start=(int)(Math.random()* (letters.length()-num));   
     letters = letters.substring (0, start)+ letters.substring(start + num);
     System.out.println (letters);
     }
